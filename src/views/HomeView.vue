@@ -21,9 +21,15 @@ import MainLayout from '@/layouts/MainLayout.vue'
             <p data-layername="description" class="mt-4 leading-7 w-[599px] max-md:w-full font-inter">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
-            <a href="/post" data-layername="button" class="gap-3 px-12 py-4 mt-12 mb-0 text-lg leading-none bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 max-md:px-5 max-md:mt-10 max-md:mb-2.5 font-inter" aria-label="Read more about font pairs guide">
-                Read More &gt;
-            </a>
+            <RouterLink
+  to="/post"
+  data-layername="button"
+  class="gap-3 px-12 py-4 mt-12 mb-0 text-lg leading-none bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 max-md:px-5 max-md:mt-10 max-md:mb-2.5 font-inter"
+  aria-label="Read more about font pairs guide"
+>
+  Read More &gt;
+</RouterLink>
+
         </div>
     </section>
 </article>
@@ -35,9 +41,14 @@ import MainLayout from '@/layouts/MainLayout.vue'
     >
       <h1 class="flex-1 text-center tracking-tighter">Featured Post</h1>
       <h2 class="flex-1 text-center tracking-tighter">All Posts</h2>
-      <a href="/blog" class="my-auto text-base text-yellow-300" tabindex="0"
-        >View All</a
-      >
+      <RouterLink
+  to="/blog"
+  class="my-auto text-base text-yellow-300"
+  tabindex="0"
+>
+  View All
+</RouterLink>
+
     </header>
 
     <section class="mt-9 max-w-full">
