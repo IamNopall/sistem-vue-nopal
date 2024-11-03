@@ -108,11 +108,13 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+export default defineComponent({
   methods: {
     handleSubmit() {
       // Your form submission logic here
     },
   },
-}
+});
+
 </script>
