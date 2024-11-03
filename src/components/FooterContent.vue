@@ -108,12 +108,11 @@
 </template>
 
 <script lang="ts">
-import { ref } from 'vue';
-export default ({
+export default {
   methods: {
     handleSubmit() {
       // Your form submission logic here
     },
   },
-});
+};
 </script>
