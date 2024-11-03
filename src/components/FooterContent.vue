@@ -1,77 +1,49 @@
-<template>
-  <footer
-    class="mt-44 flex flex-col overflow-hidden justify-center px-20 py-14 bg-gray-900 text-white max-md:px-6"
-  >
-    <!-- Footer Main Section -->
-    <div
-      class="flex flex-wrap gap-5 justify-between items-start w-full text-base leading-7 max-md:flex-col max-md:items-center"
-    >
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/86d468087b4bf740b7bf02a878a48c57443cb6060d0e8542e791693268e3ef42?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
-        alt="Company Logo"
-        class="object-contain w-[140px] max-md:w-[100px] aspect-auto"
-      />
-      <nav class="flex flex-wrap gap-6 mt-4 max-md:justify-center">
-        <a
-          href="/"
-          class="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
-          aria-label="Navigate to Home"
-          >Home</a
-        >
-        <a
-          href="/blog"
-          class="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
-          aria-label="Navigate to Blog"
-          >Blog</a
-        >
-        <a
-          href="/aboutus"
-          class="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
-          aria-label="Navigate to About us"
-          >About us</a
-        >
-        <a
-          href="/contact"
-          class="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
-          aria-label="Navigate to Contact us"
-          >Contact us</a
-        >
-        <a
-          href="/policy"
-          class="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
-          aria-label="Navigate to Privacy Policy"
-          >Privacy Policy</a
-        >
-      </nav>
-    </div>
+<script setup lang="ts">
+import { ref } from 'vue'
 
-    <!-- Newsletter Section -->
-    <section
-      class="px-16 py-12 mt-10 w-full bg-opacity-10 bg-white rounded-md max-md:px-6 max-md:mt-8"
-    >
+const email = ref('')
+
+const handleSubmit = () => {
+  console.log('Form submitted with email:', email.value)
+}
+
+</script>
+
+<template>
+  <header class="flex overflow-hidden flex-col justify-center px-20 py-14 bg-gray-800 max-md:px-5">
+    <nav class="flex flex-wrap gap-5 justify-between items-start w-full text-base leading-7 text-white max-md:max-w-full">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba600cb1b837e96e25434af74d4b9b8453d29da76b22b09da11bb2c554f02e70?placeholderIfAbsent=true&apiKey=e8011a4084744e0fbb615d9ad0bac9f7" alt="Company Logo" class="object-contain shrink-0 max-w-full aspect-[5] w-[140px]" />
+      <ul class="flex gap-6 list-none">
+      <li><router-link to="/" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Home</router-link></li>
+      <li><router-link to="/blog" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Blog</router-link></li>
+      <li><router-link to="/aboutus" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">About us</router-link></li>
+      <li><router-link to="/contact" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Contact us</router-link></li>
+      <li><router-link to="/policy" class="text-white hover:text-x-yellow transition duration-150 ease-in-out">Privacy Policy</router-link></li>
+    </ul>
+
+    </nav>
+
+    <section class="px-16 py-20 mt-14 w-full bg-white bg-opacity-10 max-md:px-5 max-md:mt-10 max-md:max-w-full">
       <div class="flex gap-5 max-md:flex-col">
-        <div class="flex flex-col w-6/12 max-md:w-full">
-          <h2 class="text-2xl md:text-3xl font-semibold text-white">
-            Subscribe to our newsletter for the latest updates and news
-          </h2>
-        </div>
-        <div class="flex flex-col w-6/12 max-md:w-full">
-          <form
-            @submit.prevent="handleSubmit"
-            class="flex gap-4 mt-4 max-md:flex-col"
-          >
-            <label for="email" class="sr-only">Enter Your Email</label>
+        <article class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+          <h1 class="text-4xl font-bold tracking-tighter leading-10 text-white max-md:mt-10 max-md:max-w-full">
+            Subscribe to our newsletter to get latest updates and news
+          </h1>
+        </article>
+        <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+          <form @submit.prevent="handleSubmit" class="flex flex-wrap gap-6 mt-1 w-full max-md:mt-10 max-md:max-w-full">
+            <label for="emailInput" class="sr-only ">Enter Your Email</label>
             <input
               type="email"
-              id="email"
+              id="emailInput"
+              v-model="email"
               required
+              class="grow px-6 py-6 text-base leading-loose border border-solid border-neutral-600 text-white w-fit max-md:px-5 bg-white bg-opacity-10"
               placeholder="Enter Your Email"
-              class="flex-grow px-4 py-3 text-base text-gray-800 border border-gray-500 placeholder-gray-600 focus:ring-2 focus:ring-blue-400 focus:outline-none"
             />
             <button
               type="submit"
-              class="px-6 py-3 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+              class="gap-3 px-12 py-4 text-lg font-bold leading-none text-white whitespace-nowrap bg-blue-600 max-md:px-5 hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
             >
               Subscribe
             </button>
@@ -80,39 +52,14 @@
       </div>
     </section>
 
-    <!-- Contact & Address Section -->
-    <div
-      class="flex flex-wrap gap-5 justify-between mt-12 text-base leading-7 max-md:mt-8 max-md:flex-col max-md:items-center"
-    >
-      <address class="opacity-80 not-italic text-center max-md:mb-4">
-        Finstreet 118, 2561 Fintown
+    <footer class="mt-12">
+      <address class="flex flex-wrap gap-5 justify-between text-base leading-7 text-white max-md:mt-10 max-md:max-w-full">
+        <p class="opacity-70">Finstreet 118 2561 Fintown</p>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c8f1b83913863a5790c652d33dbf8ed2c17dbddbf8ebf39329c28c37f31f3db9?placeholderIfAbsent=true&apiKey=e8011a4084744e0fbb615d9ad0bac9f7" alt="Social Media Icons" class="object-contain shrink-0 self-start mt-3 w-36 max-w-full aspect-[9.01]" />
       </address>
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf8fff18c67e5db4b46467cf1116a434def5c4fb1b13fdeee4d15298a3a86b8c?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
-        alt="Social Media Icons"
-        class="object-contain w-28 max-md:w-24"
-      />
-    </div>
-    <div
-      class="flex flex-wrap gap-5 justify-between mt-1 text-base leading-7 opacity-80 max-md:flex-col max-md:items-center"
-    >
-      <a
-        href="mailto:Hello@finsweet.com"
-        class="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400"
-      >
+      <p class="self-start text-base leading-7 text-white opacity-70">
         Hello@finsweet.com 020 7993 2905
-  </a>
-    </div>
-  </footer>
+      </p>
+    </footer>
+  </header>
 </template>
-
-<script lang="ts">
-export default {
-  methods: {
-    handleSubmit() {
-      // Your form submission logic here
-    },
-  },
-};
-</script>
