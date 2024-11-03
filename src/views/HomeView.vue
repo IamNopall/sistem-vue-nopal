@@ -358,26 +358,27 @@ import MainLayout from '@/layouts/MainLayout.vue'
         </div>
 
         <!-- Author 2 -->
-        <div class="flex flex-col w-full md:w-[24%]">
-          <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100 hover:bg-orange-100">
-            <img
-              loading="lazy"
-              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=400 400w"
-              class="object-contain w-32 max-w-full rounded-full aspect-square"
-            />
-            <div class="mt-5 text-3xl font-bold tracking-tighter text-gray-800 text-center">
-              Dianne Russell
-            </div>
-            <div class="self-stretch text-sm text-center text-zinc-500">
-              Content Writer @Company
-            </div>
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/8775f3a085501a9281d9a5bf55dea0e7e2f320e2662ec8d22b65894fced518c1?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
-              class="object-contain mt-5 w-28 max-w-full aspect-[6.58]"
-            />
-          </div>
-        </div>
+        <RouterLink to="/author" class="flex flex-col w-full md:w-[24%]">
+  <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100 hover:bg-orange-100">
+    <img
+      loading="lazy"
+      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=400 400w"
+      class="object-contain w-32 max-w-full rounded-full aspect-square"
+    />
+    <div class="mt-5 text-3xl font-bold tracking-tighter text-gray-800 text-center">
+      Dianne Russell
+    </div>
+    <div class="self-stretch text-sm text-center text-zinc-500">
+      Content Writer @Company
+    </div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/8775f3a085501a9281d9a5bf55dea0e7e2f320e2662ec8d22b65894fced518c1?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
+      class="object-contain mt-5 w-28 max-w-full aspect-[6.58]"
+    />
+  </div>
+</RouterLink>
+
 
         <!-- Author 3 -->
         <div class="flex flex-col w-full md:w-[24%]">
