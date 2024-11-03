@@ -18,14 +18,15 @@ import MainLayout from '@/layouts/MainLayout.vue'
             <p class="self-stretch mt-4 text-base leading-7 text-zinc-500">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
-            <a
-  href="/post"
+            <RouterLink
+  to="/post"
   data-layername="button"
-  class="gap-3 px-12 py-4 mt-12 mb-0 text-lg leading-none bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 max-md:px-5 max-md:mt-10 max-md:mb-2.5 font-inter "
+  class="gap-3 px-12 py-4 mt-12 mb-0 text-lg leading-none bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 max-md:px-5 max-md:mt-10 max-md:mb-2.5 font-inter"
   aria-label="Read more about font pairs guide"
 >
   Read More &gt;
-</a>
+</RouterLink>
+
           </div>
         </section>
         <section class="flex flex-col w-[45%] max-md:w-full">

@@ -203,96 +203,97 @@ import MainLayout from '@/layouts/MainLayout.vue'
     </section>
 
     <section class="mt-20 w-full">
-      <div class="flex flex-col md:flex-row gap-10">
-
-        <section class="flex flex-col">
-          <h2
-            class="self-start text-4xl font-bold tracking-tighter leading-none text-center text-gray-800 max-md:max-w-full mx-auto"
-          >
-            Choose A Category
-          </h2>
-          <div class="mt-12 w-full max-md:mt-10 max-md:max-w-full">
-            <div class="flex gap-5 max-md:flex-col">
-              <article class="flex flex-col w-1/4 max-md:w-full max-md:mb-6">
-                <div
-                  class="flex flex-col grow items-start p-6 bg-white border border-gray-300 rounded-lg transition-transform transform hover:scale-105 max-md:px-4"
-                >
-                  <div
-                    class="flex overflow-hidden relative flex-col w-12 aspect-square"
-                  >
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce335824448cbad56f38896330200d6bf9ede337a7a65aedb9c940df72afce49?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
-                      alt="Business category icon"
-                      class="object-contain w-full aspect-square"
-                    />
-                  </div>
-                  <h3 class="mt-4 text-2xl font-bold text-gray-800">
-                    Business
-                  </h3>
-                  <p class="mt-2 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </article>
-
-              <article class="flex flex-col w-1/4 max-md:w-full max-md:mb-6">
-                <div
-                  class="flex flex-col grow items-start p-6 bg-blue-600 border border-gray-300 rounded-lg transition-transform transform hover:scale-105 max-md:px-4"
-                >
-                <a href="/category">
-  <img
-    loading="lazy"
-    src="https://cdn.builder.io/api/v1/image/assets/TEMP/576cba0d27ba2190bd6bbd54daa12782abddcdfeedf9d5523524e38534114f60?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
-    alt="Startup category icon"
-    class="object-contain w-12 aspect-square fill-orange-50"
-  />
-  <h3 class="mt-4 text-2xl font-bold text-white">Startup</h3>
-  <p class="mt-2 text-sm text-white">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  </p>
-</a>
-                </div>
-              </article>
-              <article class="flex flex-col w-1/4 max-md:w-full max-md:mb-6">
-                <div
-                  class="flex flex-col grow items-start p-6 bg-white border border-gray-300 rounded-lg transition-transform transform hover:scale-105 max-md:px-4"
-                >
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/637773575d198fc5286fb0be6c342361f8e09c2c7af65a52633043571f3691f2?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
-                    alt="Economy category icon"
-                    class="object-contain w-12 aspect-square"
-                  />
-                  <h3 class="mt-4 text-2xl font-bold text-gray-800">Economy</h3>
-                  <p class="mt-2 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </article>
-              <article class="flex flex-col w-1/4 max-md:w-full max-md:mb-6">
-                <div
-                  class="flex flex-col grow items-start p-6 bg-white border border-gray-300 rounded-lg transition-transform transform hover:scale-105 max-md:px-4"
-                >
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba52a322b7c5a457cb29fe4a75a6b17ffcf005e83c416286b8655f49dfd656f2?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
-                    alt="Technology category icon"
-                    class="object-contain w-12 aspect-square"
-                  />
-                  <h3 class="mt-4 text-2xl font-bold text-gray-800">
-                    Technology
-                  </h3>
-                  <p class="mt-2 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  </p>
-                </div>
-              </article>
+  <div class="flex flex-col md:flex-row gap-10">
+    <section class="flex flex-col">
+      <h2
+        class="self-start text-4xl font-bold tracking-tighter leading-none text-center text-gray-800 max-md:max-w-full mx-auto"
+      >
+        Choose A Category
+      </h2>
+      <div class="mt-12 w-full max-md:mt-10 max-md:max-w-full">
+        <div class="flex gap-5 max-md:flex-col">
+          <article class="flex flex-col w-1/4 max-md:w-full max-md:mb-6">
+            <div
+              class="flex flex-col grow items-start p-6 bg-white border border-gray-300 rounded-lg transition-transform transform hover:scale-105 hover:bg-blue-500 max-md:px-4"
+            >
+              <div
+                class="flex overflow-hidden relative flex-col w-12 aspect-square"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce335824448cbad56f38896330200d6bf9ede337a7a65aedb9c940df72afce49?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
+                  alt="Business category icon"
+                  class="object-contain w-full aspect-square"
+                />
+              </div>
+              <h3 class="mt-4 text-2xl font-bold text-gray-800">Business</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </p>
             </div>
-          </div>
-        </section>
+          </article>
+
+          <article class="flex flex-col w-1/4 max-md:w-full max-md:mb-6">
+            <div
+              class="flex flex-col grow items-start p-6 border border-gray-300 rounded-lg transition-transform transform hover:scale-105 hover:bg-blue-500 max-md:px-4"
+            >
+              <RouterLink to="/category">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/576cba0d27ba2190bd6bbd54daa12782abddcdfeedf9d5523524e38534114f60?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
+                  alt="Startup category icon"
+                  class="object-contain w-12 aspect-square fill-orange-50"
+                />
+                <h3 class="mt-4 text-2xl font-bold text-gray-800">Startup</h3>
+                <p class="mt-2 text-sm text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+              </RouterLink>
+            </div>
+          </article>
+
+          <article class="flex flex-col w-1/4 max-md:w-full max-md:mb-6">
+            <div
+              class="flex flex-col grow items-start p-6 bg-white border border-gray-300 rounded-lg transition-transform transform hover:scale-105 hover:bg-blue-500 max-md:px-4"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/637773575d198fc5286fb0be6c342361f8e09c2c7af65a52633043571f3691f2?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
+                alt="Economy category icon"
+                class="object-contain w-12 aspect-square"
+              />
+              <h3 class="mt-4 text-2xl font-bold text-gray-800">Economy</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </p>
+            </div>
+          </article>
+
+          <article class="flex flex-col w-1/4 max-md:w-full max-md:mb-6">
+            <div
+              class="flex flex-col grow items-start p-6 bg-white border border-gray-300 rounded-lg transition-transform transform hover:scale-105 hover:bg-blue-500 max-md:px-4"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba52a322b7c5a457cb29fe4a75a6b17ffcf005e83c416286b8655f49dfd656f2?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2"
+                alt="Technology category icon"
+                class="object-contain w-12 aspect-square"
+              />
+              <h3 class="mt-4 text-2xl font-bold text-gray-800">
+                Technology
+              </h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
+  </div>
+</section>
+
+
 
     <section class="py-16">
   <div class="flex w-[1280px] h-[705px] relative flex-col ml-[120px] mt-[100px] items-start text-base font-bold">
@@ -336,7 +337,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 
         <!-- Author 1 -->
         <div class="flex flex-col w-full md:w-[24%]">
-          <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100">
+          <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100 hover:bg-orange-100">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/094d39a0fb6fd4c78b277e99f5b8cced1213f2081aba68e2be99b15d0af7db97?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/094d39a0fb6fd4c78b277e99f5b8cced1213f2081aba68e2be99b15d0af7db97?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/094d39a0fb6fd4c78b277e99f5b8cced1213f2081aba68e2be99b15d0af7db97?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/094d39a0fb6fd4c78b277e99f5b8cced1213f2081aba68e2be99b15d0af7db97?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=800 800w"
@@ -358,7 +359,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 
         <!-- Author 2 -->
         <div class="flex flex-col w-full md:w-[24%]">
-          <div class="flex flex-col items-center px-14 py-10 leading-none bg-orange-50">
+          <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100 hover:bg-orange-100">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/8c4b195e3409ae2d869b5afba23e15e0925221a1305277931957c58b69b3c6aa?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=400 400w"
@@ -380,7 +381,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 
         <!-- Author 3 -->
         <div class="flex flex-col w-full md:w-[24%]">
-          <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100">
+          <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100 hover:bg-orange-100">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/b8a3a0da50e34bbdb69687de32739de1278c67e778a99654562f581148bee468?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b8a3a0da50e34bbdb69687de32739de1278c67e778a99654562f581148bee468?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b8a3a0da50e34bbdb69687de32739de1278c67e778a99654562f581148bee468?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=400 400w"
@@ -402,7 +403,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 
         <!-- Author 4 -->
         <div class="flex flex-col w-full md:w-[24%]">
-          <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100">
+          <div class="flex flex-col items-center px-14 py-10 leading-none bg-zinc-100 hover:bg-orange-100">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/54d3f7ddccbe68495e8eb4e094d3be6ca1098fc5100fa4f626206f477da5cb8f?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/54d3f7ddccbe68495e8eb4e094d3be6ca1098fc5100fa4f626206f477da5cb8f?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/54d3f7ddccbe68495e8eb4e094d3be6ca1098fc5100fa4f626206f477da5cb8f?placeholderIfAbsent=true&apiKey=832aedb5e1714ab3835c6bddb89280b2&width=400 400w"
@@ -425,6 +426,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
     </div>
   </div>
 </section>
+
 <section data-layername="logoComponent" class="flex flex-wrap gap-10 items-start text-zinc-500 pt-20" aria-labelledby="featured-section-title">
     <header class="flex flex-col self-start mt-0">
       <h2 id="featured-section-title">

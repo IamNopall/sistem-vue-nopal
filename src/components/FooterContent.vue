@@ -10,7 +10,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <header class="flex overflow-hidden flex-col justify-center px-20 py-14 bg-gray-800 max-md:px-5">
+  <header class="mt-32 flex overflow-hidden flex-col justify-center px-20 py-14 bg-gray-800 max-md:px-5">
     <nav class="flex flex-wrap gap-5 justify-between items-start w-full text-base leading-7 text-white max-md:max-w-full">
       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ba600cb1b837e96e25434af74d4b9b8453d29da76b22b09da11bb2c554f02e70?placeholderIfAbsent=true&apiKey=e8011a4084744e0fbb615d9ad0bac9f7" alt="Company Logo" class="object-contain shrink-0 max-w-full aspect-[5] w-[140px]" />
       <ul class="flex gap-6 list-none">
